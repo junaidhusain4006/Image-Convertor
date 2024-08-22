@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Img Conv.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/How_to_use">How To Use</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Formats
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">JPEG</a></li>
+              <li><a class="dropdown-item" href="#">IMG</a></li>
+              <li><a class="dropdown-item" href="#">PNG</a></li>
+              <li><a class="dropdown-item" href="#">WEBP</a></li>
+              <li><a class="dropdown-item" href="#">pdf</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">You can edit any Images</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex" role="search">
+          <button class="btn btn-outline-success mx-2" type="submit">Resume</button>
+          <button class="btn btn-outline-success mx-2" type="submit">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+<div class="ml-3 bg-light p-3">
+  <h1 class="text-info">Image Converter using Python, Flask, and Bootstrap</h1>
+  <p>This project is an Image Converter web application developed using Python, Flask, and Bootstrap. The application
+    allows users to upload images and perform basic image processing tasks such as converting them to grayscale, png, jpeg , and pdf.
+    <h4 class="text-info">Key Features:</h4>
+    Image Upload: Users can upload images in various formats, such as PNG, JPG, JPEG, GIF, and WEBP <br>
+    Image Processing: The application processes the uploaded images based on user-selected operations, such as
+    converting images to grayscale using OpenCV.<br>
+    Responsive UI: The frontend is developed using Bootstrap, ensuring a responsive and user-friendly interface across
+    different devices.<br>
+    Downloadable Output: After processing, the converted image is saved on the server and can be downloaded by the user.<br>
+    <h4 class="text-info">Technology Stack:</h4>Python: Core programming language used for backend development.<br>
+    Flask: Lightweight web framework used to create routes and handle requests and responses.<br>
+    OpenCV: Python library used for image processing tasks.<br>
+    Bootstrap: CSS framework for building responsive and visually appealing UI.<br>
+    HTML/CSS: For structuring and styling the frontend pages.<br>
+    <h4 class="text-info">User Flow:</h4>
+    Home Page: A simple interface with options to upload an image and choose the desired operation.
+    Image Upload: Users can upload an image, and the application checks for allowed file types.
+    Image Processing: The uploaded image is processed according to the selected operation (e.g., grayscale conversion).
+    Output and Download: The processed image is saved in the server's static folder, and the user is provided with a
+    link to download the result.</p>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center text-lg-start" style="position: fixed; width: 100%; bottom: 0;">
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4 text-center">
+        <p>&copy; 2024 Junaid Husain. All rights reserved.</p>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links -->
+      <section class="">
+        <div class="row justify-content-center">
+          <!-- Grid column -->
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary mb-2" onclick="window.location.href='resume.pdf'">
+              Download Resume
+            </button>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-auto">
+            <button type="button" class="btn btn-secondary mb-2"
+              onclick="window.location.href='junaidhusain2628@gmail.com'">
+              Contact Me
+            </button>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-auto">
+            <button type="button" class="btn btn-info mb-2"
+              onclick="window.location.href='https://www.linkedin.com/in/junaid-husain/'">
+              LinkedIn
+            </button>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Links -->
+    </div>
+  </footer>
+</body>
+
+</html>
